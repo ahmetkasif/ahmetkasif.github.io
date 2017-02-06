@@ -4,16 +4,53 @@
 @import 'libs/skel';
 
 /*
-	Eventually by HTML5 UP
+	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Signup Form */
+/* Basic */
 
-	#signup-form {
-		> * {
-			display: inline-block;
-			vertical-align: top;
+	body {
+		background-image:		url('../../images/bg.jpg');
+		background-repeat:		no-repeat;
+		background-size:		cover;
+		background-position:	bottom center;
+		background-attachment:	fixed;
+
+		&:after {
+			display: none;
 		}
+	}
+
+/* List */
+
+	ul {
+		&.icons {
+			li {
+				a {
+					&:before {
+						color: _palette(border);
+					}
+
+					&:hover {
+						&:before {
+							color: _palette(highlight);
+						}
+					}
+				}
+			}
+		}
+	}
+
+/* Wrapper */
+
+	#wrapper {
+		text-align: center;
+	}
+
+/* Main */
+
+	#main {
+		display: inline-block;
 	}

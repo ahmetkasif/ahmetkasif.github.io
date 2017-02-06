@@ -1,50 +1,43 @@
 <!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Ahmet Kaşif</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body>
-
-		<!-- Header -->
-			<header id="header">
-				<h1>Ahmet Kaşif</h1>
-				<p>CS Student at <a href="http://www.bayar.edu.tr/anasayfa/index.php">Manisa C.B.U</a> - <a href="https://github.com/ahmetkasif">Developer</a><br />
-				Bursa - Türkiye</p>
-			</header>
-
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://twitter.com/ksfahmet" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-trello"><span class="label">Instagram</span></a></li>
-					<li><a href="https://github.com/ahmetkasif" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:ahmetkasif@ogr.cbu.edu.tr" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; <a href="https://github.com/ahmetkasif">Ahmetkasif</a></li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
+	<body class="is-loading">
+			<div id="wrapper">
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Ahmet KÂŞİF</h1>
+							<p>CS Student at <a href="#">Manisa C.B.U</a> - <a href="#">Developer</a></p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://twitter.com/ksfahmet" class="fa-twitter">Twitter</a></li>
+								<li><a href="https://www.instagram.com/ahmetksf/?hl=tr" class="fa-instagram">Instagram</a></li>
+								<li><a href="https://github.com/ahmetkasif" class="fa-github">Github</a></li>
+								<li><a href="https://trello.com/kasifahmet" class="fa-trello">Twitter</a></li>
+								<li><a href="mailto:ahmetkasif@ogr.cbu.edu.tr" class="fa-envelope">Mail</a></li>
+								<li><a href="http://steamcommunity.com/id/ahmetkasif/" class="fa-steam">Steam</a></li>
+							</ul>
+						</footer>
+					</section>
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Ahmet Kaşif</li>
+							<li>Şubat 2017</li>
+						</ul>
+					</footer>
+			</div>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 	</body>
 </html>

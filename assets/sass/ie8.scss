@@ -4,29 +4,48 @@
 @import 'libs/skel';
 
 /*
-	Eventually by HTML5 UP
+	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* BG */
+/* List */
 
-	#bg {
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+	ul {
+		&.icons {
+			li {
+				a {
+					-ms-behavior: url('assets/js/PIE.htc');
+
+					&:before {
+						text-align: center;
+						font-size: 26px;
+					}
+				}
+			}
+		}
 	}
 
-/* Type */
+/* Main */
 
-	body, input, select, textarea {
-		color: _palette(fg-bold);
+	#main {
+		-ms-behavior: url('assets/js/PIE.htc');
+
+		.avatar {
+			img {
+				-ms-behavior: url('assets/js/PIE.htc');
+			}
+		}
 	}
 
-/* Form */
+/* Footer */
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		border: solid _size(border-width) _palette(fg-bold);
+	#footer {
+		color: #fff;
+
+		.copyright {
+			li {
+				border-left: solid 1px #fff;
+			}
+		}
 	}
