@@ -6,14 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" sizes="16x16 32x32" href="images/favicon.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
 			<div id="wrapper">
 					<section id="main">
-						<header>
+						<header id="animationSandbox">
 							<span class="avatar"><img src="images/favicon.png" alt="" /></span>
-							<h1>Ahmet KÂŞİF</h1>
+							<h1 class="generated">Ahmet KÂŞİF</h1>
 							<p>CS Student at <a href="http://www.bayar.edu.tr/anasayfa/index.php">Manisa C.B.U</a> - <a href="https://github.com/ahmetkasif">Developer</a></p>
 						</header>
 						<footer>
@@ -34,7 +35,24 @@
 						</ul>
 					</footer>
 			</div>
+			<script src="assets/js/jquery-3.2.0.min.js"></script>
 			<script>
+				function testAnim(x) {
+					$('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						$(this).removeClass();
+					});
+				};
+				$(document).ready(function(){
+					$('.js--triggerAnimation').click(function(e){
+						e.preventDefault();
+						var anim = $('.js--animations').val();
+						testAnim(anim);
+					});
+					$('.js--animations').change(function(){
+						var anim = $(this).val();
+						testAnim(anim);
+					});
+				});
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
