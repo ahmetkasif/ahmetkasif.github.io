@@ -24,49 +24,69 @@
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="list-group navbar-nav" id="213" role="tablist">
 					<a class="menuButton nav-item nav-link active" id="list-home" data-toggle="list" href="#home" role="tab" aria-controls="home">Home <span class="sr-only">(current)</span></a>
-					<a class="menuButton nav-item nav-link" id="list-projects" data-toggle="list" href="#projects" role="tab" aria-controls="profile">Projects</a>
-					<a class="menuButton nav-item nav-link" id="list-program" data-toggle="list" href="#program" role="tab" aria-controls="messages">Program</a>
-					<a class="menuButton nav-item nav-link" id="list-publications" data-toggle="list" href="#publications" role="tab" aria-controls="home">Publications</a>
+					<a class="menuButton nav-item nav-link" id="list-projects" data-toggle="list" href="#projects" role="tab" aria-controls="projects">Projects</a>
+					<a class="menuButton nav-item nav-link" id="list-program" data-toggle="list" href="#program" role="tab" aria-controls="program">Program</a>
+					<a class="menuButton nav-item nav-link" id="list-publications" data-toggle="list" href="#publications" role="tab" aria-controls="publications">Publications</a>
 					<a class="menuButton nav-item nav-link" id="list-presentations" data-toggle="list" href="#presentations" role="tab" aria-controls="presentations">Presentations</a>
-					<a class="menuButton nav-item nav-link" id="list-activities" data-toggle="list" href="#activities" role="tab" aria-controls="profile">Activities</a>
-					<a class="menuButton nav-item nav-link" id="list-cv" data-toggle="list" href="#cv" role="tab" aria-controls="messages">CV</a>
+					<a class="menuButton nav-item nav-link" id="list-activities" data-toggle="list" href="#activities" role="tab" aria-controls="activities">Activities</a>
+					<a class="menuButton nav-item nav-link" id="list-cv" data-toggle="list" href="#cv" role="tab" aria-controls="cv">CV</a>
 				</div>
 			</div>
 		</nav>
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="tab-content" id="nav-tabContent">
+					<!-- HOME TAB START -->
 					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="list-home">
 						<div class="card bio">
 							<div class="card-body">
+								<img src="https://secure.gravatar.com/avatar/85278d30a144a853ab061ddf1b92f805" class="rounded float-right" alt="...">
 								<h4 class="card-title">Ahmet Kaşif</h4>
 								<h6 class="card-subtitle mb-2 text-muted">Computer Engineer (<a href="http://bilgisayarmuh.cbu.edu.tr/">BS Degree at C.B.U</a>)</h6>
-								<p class="card-text">MS student at Uludağ University <a href="http://www.uludag.edu.tr/bm/">Computer Engineering</a> Department</p>
+								<p class="card-text">MS student and voluntary assistant at Uludağ University <a href="http://www.uludag.edu.tr/bm/">Computer Engineering</a> Department</p>
 								<h4><b>Contact</b></h4>
-								<p>E-mail: <a href="mailto:ksfahmet@gmail.com">ksfahmet@gmail.com</a></p>
+								<p>Mail me at: <a href="mailto:ksfahmet@gmail.com">ksfahmet@gmail.com</a></p>
 								<p>Text me at <a href="https://t.me/ahmetkasif">Telegram</a></p>
 								<h4><b>Research Interests</b></h4>
-								<p>Image Processing, Machine Learning, Data Mining, IOT</p>
-								<h4><b>Personal Interests</b></h4>
-								<p>Travel, Chess, Photograpy</p>
+								<p>Image Processing, Machine Learning, Data Mining, IOT, </p>
+								<h4><b>Hobbies</b></h4>
+								<p>Travel, <a href="https://lichess.org/@/WesternFront">Chess</a>, Photography, Watching documentaries</p>
 							</div>
 						</div>
 					</div>
+					<!-- PROJECTS TAB START -->
 					<div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="list-projects">
 						<div class="card bio">
 							<div class="card-body">
 								<h4 class="card-title">Projects</h4>
 								<h6 class="card-subtitle mb-2 text-muted">More at <a href="https://github.com/ahmetkasif">GitHUB</a></h6>
 								<ul class="list-group">
-									<li class="list-group-item"><a href="">Dakik: Cross-Platform Time &amp; Task Management App</a></li>
-									<li class="list-group-item"><a href="">Maxit+: Remake of Maxit Game with a greedy ai and modern graphics using LibGDX</a></li>
-									<li class="list-group-item"><a href="">ChartUI: Data visualization tool with its own modular data generation form. </a></li>
-									<li class="list-group-item">Digit Recognition using Image Processing &amp; Machine Learning techniques</li>
-									<li class="list-group-item"><a href="">Online XOX game implementation with an active lobby and chatting system.</a></li>
+									<li class="list-group-item list-group-item-action flex-column align-items-start">
+										<h5 class="mb-1"><a id="list-dakik" data-toggle="list" href="#dakik" role="tab" aria-controls="dakik">Dakik: Cross-Platform Time &amp; Task Management App</a></h5>
+      							<small>2017</small>
+									</li>
+									<li class="list-group-item list-group-item-action flex-column align-items-start">
+										<h5 class="mb-1"><a id="list-dr" data-toggle="list" href="#dr" role="tab" aria-controls="dr">OCR Application for handwritten digits</a></h5>
+      							<small>2017</small>
+									</li>
+
+									<li class="list-group-item list-group-item-action flex-column align-items-start">
+										<h5 class="mb-1"><a id="list-xox" data-toggle="list" href="#xox" role="tab" aria-controls="xox">Online XOX game implementation with an active lobby and chatting system.</a></h5>
+      							<small>2017</small>
+									</li>
+									<li class="list-group-item list-group-item-action flex-column align-items-start">
+										<h5 class="mb-1"><a id="list-chartui" data-toggle="list" href="#chartui" role="tab" aria-controls="chartui">ChartUI: Data visualization tool with its own modular data generation form.</a></h5>
+      							<small>2016</small>
+									</li>
+									<li class="list-group-item list-group-item-action flex-column align-items-start">
+										<h5 class="mb-1"><a id="list-maxit" data-toggle="list" href="#maxit" role="tab" aria-controls="maxit">Maxit+: Remake of Maxit Game with a greedy ai and modern graphics using LibGDX</a></h5>
+      							<small>2015</small>
+									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
+					<!-- PROGRAMS TAB START -->
 					<div class="tab-pane fade" id="program" role="tabpanel" aria-labelledby="list-program">
 						<div class="card bio">
 							<div class="card-body">
@@ -76,7 +96,7 @@
 									<thead>
 										<tr>
 											<th scope="col">Hours</th>
-											<th scope="col">9:30-14:30</th>
+											<th scope="col">9:30-15:30</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -89,6 +109,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- PUBLICATIONS TAB START -->
 					<div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="list-publications">
 						<div class="card bio">
 						  <div class="card-body">
@@ -97,6 +118,7 @@
 						  </div>
 						</div>
 					</div>
+					<!-- PRESENTATIONS TAB START -->
 					<div class="tab-pane fade" id="presentations" role="tabpanel" aria-labelledby="list-presentataions">
 						<div class="card bio">
 						  <div class="card-body">
@@ -105,6 +127,7 @@
 						  </div>
 						</div>
 					</div>
+					<!-- ACTIVITIES TAB START -->
 					<div class="tab-pane fade" id="activities" role="tabpanel" aria-labelledby="list-activities">
 						<div class="card bio">
 						  <div class="card-body">
@@ -128,8 +151,29 @@
 						  </div>
 						</div>
 					</div>
+					<!-- CV TAB START -->
 					<div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="list-cv">
 						<embed src="assets/ahmet.pdf" width="1280" height="800" type='application/pdf'>
+					</div>
+					<!-- DAKİK TAB START -->
+					<div class="tab-pane fade" id="dakik" role="tabpanel" aria-labelledby="list-dakik">
+						Will be updated!
+					</div>
+					<!-- MAXIT TAB START -->
+					<div class="tab-pane fade" id="maxit" role="tabpanel" aria-labelledby="list-maxit">
+						Will be updated!
+					</div>
+					<!-- CHART-UI TAB START -->
+					<div class="tab-pane fade" id="chartui" role="tabpanel" aria-labelledby="list-chartui">
+						Will be updated!
+					</div>
+					<!-- DIGIT RECOGNITION TAB START -->
+					<div class="tab-pane fade" id="dr" role="tabpanel" aria-labelledby="list-dr">
+						Will be updated!
+					</div>
+					<!-- XOX TAB START -->
+					<div class="tab-pane fade" id="xox" role="tabpanel" aria-labelledby="list-xox">
+						Will be updated!
 					</div>
 				</div>
 			</div>
