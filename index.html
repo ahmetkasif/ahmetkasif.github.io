@@ -18,35 +18,119 @@
 <body style="font-family: 'Raleway', sans-serif;">
 	<div class="container">
 		<nav class="navbar navbar-expand-sm navbar-light menu">
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav">
-					<a class="menuButton nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-					<a class="menuButton nav-item nav-link" href="projects.html">Projects</a>
-					<a class="menuButton nav-item nav-link" href="program.html">Office Hours</a>
-		      <a class="menuButton nav-item nav-link" href="publications.html">Publications</a>
-					<a class="menuButton nav-item nav-link" href="activities.html">Activities</a>
-		      <a class="menuButton nav-item nav-link" href="cv.html">CV</a>
-		    </div>
-		  </div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="list-group navbar-nav" id="213" role="tablist">
+					<a class="menuButton nav-item nav-link active" id="list-home" data-toggle="list" href="#home" role="tab" aria-controls="home">Home <span class="sr-only">(current)</span></a>
+					<a class="menuButton nav-item nav-link" id="list-projects" data-toggle="list" href="#projects" role="tab" aria-controls="profile">Projects</a>
+					<a class="menuButton nav-item nav-link" id="list-program" data-toggle="list" href="#program" role="tab" aria-controls="messages">Program</a>
+					<a class="menuButton nav-item nav-link" id="list-publications" data-toggle="list" href="#publications" role="tab" aria-controls="home">Publications</a>
+					<a class="menuButton nav-item nav-link" id="list-presentations" data-toggle="list" href="#presentations" role="tab" aria-controls="presentations">Presentations</a>
+					<a class="menuButton nav-item nav-link" id="list-activities" data-toggle="list" href="#activities" role="tab" aria-controls="profile">Activities</a>
+					<a class="menuButton nav-item nav-link" id="list-cv" data-toggle="list" href="#cv" role="tab" aria-controls="messages">CV</a>
+				</div>
+			</div>
 		</nav>
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="card bio">
-				  <div class="card-body">
-				    <h4 class="card-title">Ahmet Kaşif</h4>
-				    <h6 class="card-subtitle mb-2 text-muted">Computer Engineer (<a href="http://bilgisayarmuh.cbu.edu.tr/">BS Degree at C.B.U</a>)</h6>
-				    <p class="card-text">MS student at Uludağ University <a href="http://www.uludag.edu.tr/bm/">Computer Engineering</a> Department</p>
-						<h4><b>Contact</b></h4>
-						<p>E-mail: <a href="mailto:ksfahmet@gmail.com">ksfahmet@gmail.com</a></p>
-						<p>Text me at <a href="https://t.me/ahmetkasif">Telegram</a></p>
-						<h4><b>Research Interests</b></h4>
-						<p>Image Processing, Machine Learning, Data Mining, IOT</p>
-						<h4><b>Personal Interests</b></h4>
-						<p>Travel, Chess, Photograpy</p>
-				  </div>
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="list-home">
+						<div class="card bio">
+							<div class="card-body">
+								<h4 class="card-title">Ahmet Kaşif</h4>
+								<h6 class="card-subtitle mb-2 text-muted">Computer Engineer (<a href="http://bilgisayarmuh.cbu.edu.tr/">BS Degree at C.B.U</a>)</h6>
+								<p class="card-text">MS student at Uludağ University <a href="http://www.uludag.edu.tr/bm/">Computer Engineering</a> Department</p>
+								<h4><b>Contact</b></h4>
+								<p>E-mail: <a href="mailto:ksfahmet@gmail.com">ksfahmet@gmail.com</a></p>
+								<p>Text me at <a href="https://t.me/ahmetkasif">Telegram</a></p>
+								<h4><b>Research Interests</b></h4>
+								<p>Image Processing, Machine Learning, Data Mining, IOT</p>
+								<h4><b>Personal Interests</b></h4>
+								<p>Travel, Chess, Photograpy</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="list-projects">
+						<div class="card bio">
+							<div class="card-body">
+								<h4 class="card-title">Projects</h4>
+								<h6 class="card-subtitle mb-2 text-muted">More at <a href="https://github.com/ahmetkasif">GitHUB</a></h6>
+								<ul class="list-group">
+									<li class="list-group-item"><a href="">Dakik: Cross-Platform Time &amp; Task Management App</a></li>
+									<li class="list-group-item"><a href="">Maxit+: Remake of Maxit Game with a greedy ai and modern graphics using LibGDX</a></li>
+									<li class="list-group-item"><a href="">ChartUI: Data visualization tool with its own modular data generation form. </a></li>
+									<li class="list-group-item">Digit Recognition using Image Processing &amp; Machine Learning techniques</li>
+									<li class="list-group-item"><a href="">Online XOX game implementation with an active lobby and chatting system.</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="program" role="tabpanel" aria-labelledby="list-program">
+						<div class="card bio">
+							<div class="card-body">
+								<h4 class="card-title">Office Hours</h4>
+								<h6 class="card-subtitle mb-2 text-muted">Last updated 16.11.2017</h6>
+								<table class="table table-bordered table-hover">
+									<thead>
+										<tr>
+											<th scope="col">Hours</th>
+											<th scope="col">9:30-14:30</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Monday</th>
+											<td>Comp. Sci. M.S Office</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="list-publications">
+						<div class="card bio">
+						  <div class="card-body">
+						    <h4 class="card-title">Publications</h4>
+						    <p class="card-text"><a href="http://umas.duzce.edu.tr/yuklemeler/ABSTRACT%20BOOK%20FINAL.pdf">Dakik: Pomodoro Tekniği Tabanlı Çoklu Platform Destekli Zaman Yönetim Uygulaması</a> - Özet Bildiri, UMAS 2017</p>
+						  </div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="presentations" role="tabpanel" aria-labelledby="list-presentataions">
+						<div class="card bio">
+						  <div class="card-body">
+						    <h4 class="card-title">Presentations</h4>
+						    <p class="card-text">Will be updated..</p>
+						  </div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="activities" role="tabpanel" aria-labelledby="list-activities">
+						<div class="card bio">
+						  <div class="card-body">
+						    <h4 class="card-title">Activities</h4>
+		            <div class="row">
+		              <div class="col-4">
+		                <div class="list-group" id="list-tab" role="tablist">
+		                  <a class="list-group-item list-group-item-action active" id="list-umas17" data-toggle="list" href="#umas17" role="tab" aria-controls="home">UMAS 2017</a>
+		                  <a class="list-group-item list-group-item-action" id="list-ab16" data-toggle="list" href="#ab16" role="tab" aria-controls="profile">AB 2016</a>
+		                  <a class="list-group-item list-group-item-action" id="list-ab15" data-toggle="list" href="#ab15" role="tab" aria-controls="messages">AB 2015</a>
+		                </div>
+		              </div>
+		              <div class="col-8">
+		                <div class="tab-content" id="nav-tabContent">
+		                  <div class="tab-pane fade show active" id="umas17" role="tabpanel" aria-labelledby="list-umas17">Attended UMAS 2017 Congress and presented our project, Dakik.</div>
+		                  <div class="tab-pane fade" id="ab16" role="tabpanel" aria-labelledby="list-ab16">Attended Akademik Bilişim 16 conference in Aydın, 2016</div>
+		                  <div class="tab-pane fade" id="ab15" role="tabpanel" aria-labelledby="list-ab15">Attended Akademik Bilişim 15 conference in Eskişehir, 2015</div>
+		                </div>
+		              </div>
+		            </div>
+						  </div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="list-cv">
+						<embed src="assets/ahmet.pdf" width="1280" height="800" type='application/pdf'>
+					</div>
 				</div>
 			</div>
 		</div>
