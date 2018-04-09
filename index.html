@@ -14,159 +14,43 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 </head>
 <body style="font-family: 'Raleway', sans-serif;">
 	<div class="container">
-		<nav class="navbar navbar-expand-sm navbar-light menu">
+		<nav class="navbar navbar-expand-md navbar-light menu">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="list-group navbar-nav" id="213" role="tablist">
+				<div class="list-group navbar-nav" role="tablist">
 					<a class="menuButton nav-item nav-link active" id="list-home" data-toggle="list" href="#home" role="tab" aria-controls="home">Home <span class="sr-only">(current)</span></a>
-					<a class="menuButton nav-item nav-link" id="list-projects" data-toggle="list" href="#projects" role="tab" aria-controls="projects">Projects</a>
-					<a class="menuButton nav-item nav-link" id="list-publications" data-toggle="list" href="#publications" role="tab" aria-controls="publications">Publications</a>
-					<a class="menuButton nav-item nav-link" id="list-presentations" data-toggle="list" href="#presentations" role="tab" aria-controls="presentations">Presentations</a>
-					<a class="menuButton nav-item nav-link" id="list-activities" data-toggle="list" href="#activities" role="tab" aria-controls="activities">Activities</a>
-					<a class="menuButton nav-item nav-link" id="list-cv" data-toggle="list" href="#cv" role="tab" aria-controls="cv">CV</a>
+					<a class="menuButton nav-item nav-link" href="projects.html">Projects</a>
+					<a class="menuButton nav-item nav-link" href="publications.html">Publications</a>
+					<a class="menuButton nav-item nav-link" href="presentations.html">Presentations</a>
+					<a class="menuButton nav-item nav-link" href="activities.html">Activities</a>
 				</div>
 			</div>
 		</nav>
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="tab-content" id="nav-tabContent">
-					<!-- HOME TAB START -->
-					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="list-home">
-						<div class="card bio">
-							<div class="card-body">
-								<img src="https://secure.gravatar.com/avatar/85278d30a144a853ab061ddf1b92f805" class="rounded float-right" alt="...">
-								<h4 class="card-title">Ahmet Kaşif</h4>
-								<h6 class="card-subtitle mb-2 text-muted">Computer Engineer (<a href="http://bilgisayarmuh.cbu.edu.tr/">BS Degree at C.B.U</a>)</h6>
-								<p class="card-text">MS student at Uludağ University <a href="http://www.uludag.edu.tr/bm/">Computer Engineering</a> Department</p>
-								<h4><b>Contact</b></h4>
-								<p>Mail me at: <a href="mailto:ksfahmet@gmail.com">ksfahmet@gmail.com</a></p>
-								<p>Text me at <a href="https://t.me/ahmetkasif">Telegram</a></p>
-								<h4><b>Research Interests</b></h4>
-								<p>Image Processing, Machine Learning, Semantic Web & Ontologies, IOT, Databases, Parallel Computing</p>
-								<h4><b>Hobbies</b></h4>
-								<p>Travel, <a href="https://lichess.org/@/WesternFront">Chess</a>, Photography, Documentaries</p>
-							</div>
-						</div>
-					</div>
-					<!-- PROJECTS TAB START -->
-					<div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="list-projects">
-						<div class="card bio">
-							<div class="card-body">
-								<h4 class="card-title">Projects</h4>
-								<h6 class="card-subtitle mb-2 text-muted">More at <a href="https://github.com/ahmetkasif">GitHUB</a></h6>
-								<ul class="list-group">
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><a id="list-dakik" data-toggle="list" href="#dakik" role="tab" aria-controls="dakik">Dakik: Cross-Platform Time &amp; Task Management App</a></h5>
-      							<small>2017</small>
-									</li>
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><a id="list-dr" data-toggle="list" href="#dr" role="tab" aria-controls="dr">OCR Application for handwritten digits</a></h5>
-      							<small>2017</small>
-									</li>
-
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><a id="list-xox" data-toggle="list" href="#xox" role="tab" aria-controls="xox">Online XOX game implementation with an active lobby and chatting system.</a></h5>
-      							<small>2017</small>
-									</li>
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><a id="list-chartui" data-toggle="list" href="#chartui" role="tab" aria-controls="chartui">ChartUI: Data visualization tool with its own modular data generation form.</a></h5>
-      							<small>2016</small>
-									</li>
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><a id="list-maxit" data-toggle="list" href="#maxit" role="tab" aria-controls="maxit">Maxit+: Remake of Maxit Game with a greedy ai and modern graphics using LibGDX</a></h5>
-      							<small>2015</small>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- PUBLICATIONS TAB START -->
-					<div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="list-publications">
-						<div class="card bio">
-						  <div class="card-body">
-						    <h4 class="card-title">Publications</h4>
-						    <p class="card-text"><a href="http://umas.duzce.edu.tr/yuklemeler/ABSTRACT%20BOOK%20FINAL.pdf">Dakik: Pomodoro Tekniği Tabanlı Çoklu Platform Destekli Zaman Yönetim Uygulaması</a> - Özet Bildiri, UMAS 2017</p>
-						  </div>
-						</div>
-					</div>
-					<!-- PRESENTATIONS TAB START -->
-					<div class="tab-pane fade" id="presentations" role="tabpanel" aria-labelledby="list-presentataions">
-						<div class="card bio">
-						  <div class="card-body">
-						    <h4 class="card-title">Presentations (Detail links will be updated)</h4>
-								<ul class="list-group" style="margin-bottom: 1em;">
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><b>Optical Character Recognition application for handwritten digits using OpenCV, SVM and C++</b></h5>
-      							<small>Görüntü İşleme ve Uygulamaları dersi (Yüksek Lisans) kapsamında geliştirip sunduğum uygulama, Bursa, 2017</small>
-									</li>
-								</ul>
-								<ul class="list-group" style="margin-bottom: 1em;">
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><b>A Genetic Algorithm implementation for Knapsack Problem in Java</b></h5>
-      							<small>Sezgisel Algoritmalar dersi (Yüksek Lisans) kapsamında geliştirip sunduğum Genetik Algoritma, Bursa, 2017</small>
-									</li>
-								</ul>
-								<ul class="list-group" style="margin-bottom: 1em;">
-									<li class="list-group-item list-group-item-action flex-column align-items-start">
-										<h5 class="mb-1"><b>Olasılıksal Bilgi Erişim Modelleri</b></h5>
-      							<small>Bilgi Erişim Sistemleri dersi (Yüksek Lisans) kapsamında arkadaşlarla hazırlayıp sunduğumuz sunum, Bursa , 2017</small>
-									</li>
-								</ul>
-						  </div>
-						</div>
-					</div>
-					<!-- ACTIVITIES TAB START -->
-					<div class="tab-pane fade" id="activities" role="tabpanel" aria-labelledby="list-activities">
-						<div class="card bio">
-						  <div class="card-body">
-						    <h4 class="card-title">Activities</h4>
-		            <div class="row">
-		              <div class="col-4">
-		                <div class="list-group" id="list-tab" role="tablist">
-		                  <a class="list-group-item list-group-item-action active" id="list-umas17" data-toggle="list" href="#umas17" role="tab" aria-controls="home">UMAS 2017</a>
-		                  <a class="list-group-item list-group-item-action" id="list-ab16" data-toggle="list" href="#ab16" role="tab" aria-controls="profile">AB 2016</a>
-		                  <a class="list-group-item list-group-item-action" id="list-ab15" data-toggle="list" href="#ab15" role="tab" aria-controls="messages">AB 2015</a>
-		                </div>
-		              </div>
-		              <div class="col-8">
-		                <div class="tab-content" id="nav-tabContent">
-		                  <div class="tab-pane fade show active" id="umas17" role="tabpanel" aria-labelledby="list-umas17">Attended <a href="http://umas.duzce.edu.tr/">UMAS 2017</a> Congress and presented our project, Dakik.</div>
-		                  <div class="tab-pane fade" id="ab16" role="tabpanel" aria-labelledby="list-ab16">Attended <a href="http://ab.org.tr/ab16/">Akademik Bilişim 16</a> conference in Aydın, 2016</div>
-		                  <div class="tab-pane fade" id="ab15" role="tabpanel" aria-labelledby="list-ab15">Attended <a href="http://ab2015.anadolu.edu.tr/index.php">Akademik Bilişim 15</a> conference in Eskişehir, 2015</div>
-		                </div>
-		              </div>
-		            </div>
-						  </div>
-						</div>
-					</div>
-					<!-- CV TAB START -->
-					<div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="list-cv">
-						<embed src="assets/ahmet.pdf" width="1280" height="800" type='application/pdf'>
-					</div>
-					<!-- DAKİK TAB START -->
-					<div class="tab-pane fade" id="dakik" role="tabpanel" aria-labelledby="list-dakik">
-						Will be updated!
-					</div>
-					<!-- MAXIT TAB START -->
-					<div class="tab-pane fade" id="maxit" role="tabpanel" aria-labelledby="list-maxit">
-						Will be updated!
-					</div>
-					<!-- CHART-UI TAB START -->
-					<div class="tab-pane fade" id="chartui" role="tabpanel" aria-labelledby="list-chartui">
-						Will be updated!
-					</div>
-					<!-- DIGIT RECOGNITION TAB START -->
-					<div class="tab-pane fade" id="dr" role="tabpanel" aria-labelledby="list-dr">
-						Will be updated!
-					</div>
-					<!-- XOX TAB START -->
-					<div class="tab-pane fade" id="xox" role="tabpanel" aria-labelledby="list-xox">
-						Will be updated!
+				<div class="card bio">
+					<div class="card-body">
+						<img src="https://secure.gravatar.com/avatar/85278d30a144a853ab061ddf1b92f805" class="rounded float-right" alt="...">
+						<h4 class="card-title">Ahmet Kaşif</h4>
+						<h6 class="card-subtitle mb-2 text-muted">
+							<a href="http://bilgisayarmuh.cbu.edu.tr/">Computer Engineer</a> -
+							<a href="http://www.uludag.edu.tr/bm/">CS Graduate Student</a> -
+							<a href="http://bilgisayar.btu.edu.tr/index.php">Research Assistant</a>
+						</h6>
+						<h4><b>Contact</b></h4>
+						<p>Bursa Technical University, Mimar Sinan Campus, A1-222 (Monday: N/A, Tuesday: after 1PM)
+						<p><a href="mailto:ksfahmet@gmail.com">Send a mail to me</a></p>
+						<p><a href="https://t.me/ahmetkasif">Text me on Telegram</a></p>
+						<h4><b>Research Interests</b></h4>
+						<p>Data Security, AI, Image Processing, Machine Learning, Semantic Web & Ontologies, Computer Networks</p>
+						<h4><b>Hobbies</b></h4>
+						<p>Travel, <a href="https://lichess.org/@/WesternFront" data-toggle="tooltip" title="Challenge mes!">Chess</a>, Photography</p>
 					</div>
 				</div>
 			</div>
