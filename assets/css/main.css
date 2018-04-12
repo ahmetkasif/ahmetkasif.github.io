@@ -2,11 +2,9 @@
 
 :root {
 	/*New theme colors*/
-	--primary: rgba(#1897ff, 0.76);
-	--third: rgba(#027aa1, 0.76);
+	--primary: #027aa1!important;
 	--accent: #fe5555;
 	--white: #ffffff;
-
 }
 
 html {
@@ -19,9 +17,6 @@ body {
 	height: 100%;
 	background-color: #d4d4d4;
 	background-image: url("../../images/bg.jpg");
-	background-image: url("../../images/bg.jpg");
-	background-image: url("../../images/bg.jpg");
-	background-image: url("../../images/bg.jpg");
 	background-repeat: repeat, no-repeat, no-repeat;
 	background-size: cover, cover;
 	background-position: top left, center center, bottom center;
@@ -33,12 +28,12 @@ body {
 }
 
 .menu button span{
-	color: var(--primary)!important!important;
+	color: var(--primary)!important;
 }
 
 .menuButton {
 	font-size: 24px;
-	border-bottom: solid var(--primary);
+	border-bottom: solid var(--primary)!important;
 	color: rgb(255, 255, 255)!important;
 	-webkit-transition: color 0.25s ease-out!important;
   -moz-transition: color 0.25s ease-out!important;
@@ -56,6 +51,12 @@ body {
 	background-color: var(--primary)!important;
 }
 
+.list-group-item{
+	border-color: var(--primary)!important;
+	background-color: rgba(0, 0, 0, 0.25) !important;
+	color: rgb(255, 255, 255)!important;
+}
+
 .row {
 	margin: 0!important;
 	margin-top: 1em!important;
@@ -66,10 +67,15 @@ body {
 }
 
 a {
-	color: var(--primary);
+	color: var(--primary)!important;
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent)!important;
   cursor: pointer!important;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.75)!important;
+	border-color: var(--primary)!important;
 }
