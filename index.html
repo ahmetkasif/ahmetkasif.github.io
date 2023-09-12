@@ -7,63 +7,205 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="description" content="Ahmet Kasif"/>
 	<link rel="icon" sizes="16x16 32x32" href="https://secure.gravatar.com/avatar/85278d30a144a853ab061ddf1b92f805">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css" />	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 	<script src="https://use.fontawesome.com/5c945d340d.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
 </head>
 <body style="font-family: 'Raleway', sans-serif;">
 	<div class="container">
-		<nav class="navbar navbar-expand-md navbar-light menu">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div style="margin-top: 1em;" class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="list-group navbar-nav" role="tablist">
-					<a class="menuButton nav-item nav-link active" id="list-home" data-toggle="list" href="#home" role="tab" aria-controls="home">Home <span class="sr-only">(current)</span></a>
-					<a class="menuButton nav-item nav-link" href="projects.html">Projects</a>
-					<a class="menuButton nav-item nav-link" href="publications.html">Publications</a>
-					<a class="menuButton nav-item nav-link" href="presentations.html">Presentations</a>
-					<a class="menuButton nav-item nav-link" href="activities.html">Activities</a>
-				</div>
-			</div>
-		</nav>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ahmet Kaşif</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#publications">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#presentations">Presentations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+          
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="card bio">
-					<div class="card-body">
-						<h4 class="card-title"><b>Ahmet Kaşif</b></h4>
-						<h6 class="card-subtitle mb-2 text-muted">
-							<a class="badge badge-dark" href="http://bilgisayarmuh.cbu.edu.tr/">Computer Engineer</a> |
-							<a class="badge badge-dark" href="https://uludag.edu.tr/bm/konu/view?id=4823&title=nesnelerin-interneti-ve-guvenlik-arge-laboratuvari">CS Graduate</a> |
-							<a class="badge badge-dark" href="https://bilgisayarmuhendislik.istanbulc.edu.tr/tr/_">PhD Student</a>
-							<a class="badge badge-dark" href="https://sayfam.btu.edu.tr/site/ahmet.kasif/index.html">Research Assistant</a>
-						</h6>
-						<hr/>
-						<h4><b>Research Interests</b></h4>
-						<p>Information Security, Internet of Things, Machine Learning, Deep Learning, Image Processing, Computer Music</p>
-						<hr/>
-						<h4><b>Hobbies</b></h4>
-						<p>Cycling, Guitar, Tennis, <a href="https://lichess.org/@/WesternFront" data-toggle="tooltip" title="Challenge me!">Chess</a>, Photography</p>
-						<hr/>
-						<h4><b>Contact</b></h4>
-						<p>Phone (Work): 0224 300 3758</p>
-						<p>Bursa Technical University, Mimar Sinan Campus, RN: A1-222</p>
-						<p>E-Mail: ahmet.kasif@btu.edu.tr | ksfahmet@gmail.com</p>
-						<p><a href="https://ahmetkasif.github.io">Website</a></p>
-						<hr/>
-						<h4><b>Links</b></h4>
-						<a class="fa fa-graduation-cap fa-lg" href="https://scholar.google.com.tr/citations?user=GhmdMjgAAAAJ&hl=tr" data-toggle="tooltip" title="Google Scholar!"></a> |						
-						<a class="fa fa-envelope-square fa-lg" href="mailto:ahmet.kasif@btu.edu.tr" data-toggle="tooltip" title="Mail me!"></a> |
-						<a class="fa fa-telegram fa-lg" href="https://t.me/ahmetkasif" data-toggle="tooltip" title="Text me!"></a> |
-                                                <a class="fa fa-spotify fa-lg" href="https://sptfy.com/6f9R" data-toggle="tooltip" title="The way"></a> |
-						<a class="fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/ahmetkasif/" data-toggle="tooltip" title="That's for colleagues!"></a>
-					</div>
-				</div>
+                <!-- ONE -->
+				<div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>About</b></h4>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <a class="badge bg-primary" href="http://bilgisayarmuh.cbu.edu.tr/">Computer Engineer</a> |
+                            <a class="badge bg-primary" href="https://uludag.edu.tr/bm/konu/view?id=5664&title=yuksek-lisans-tezleri">CS Graduate</a> |
+                            <a class="badge bg-primary" href="https://bilgisayarmuhendislik.istanbulc.edu.tr/tr/_">PhD Student</a>
+                            <a class="badge bg-primary" href="https://sayfam.btu.edu.tr/ahmet.kasif">Research Assistant</a>
+                        </h6>
+                        <hr/>
+
+                        <h4 class="card-title"><b>Research Interests</b></h4>
+                        <p>Information Security, Internet of Things, Deep Learning, Time-Series, Quantum Computing</p>
+                        <hr/>
+
+                        <h4 class="card-title"><b>Hobbies</b></h4>
+                        <p>Cycling, Guitar, Tennis, <a href="https://lichess.org/@/WesternFront" data-toggle="tooltip" title="Challenge me!">Chess</a>, Photography</p>
+                        <hr/>
+
+                        <h4 class="card-title"><b>Contact</b></h4>
+                        <p>Phone (Work): 0224 300 3758</p>
+                        <p>Bursa Technical University, Mimar Sinan Campus, RN: A1-222</p>
+                        <p>E-Mail: ahmet.kasif@btu.edu.tr | ksfahmet@gmail.com</p>
+                        <a class="fa fa-graduation-cap fa-lg" href="https://scholar.google.com.tr/citations?user=GhmdMjgAAAAJ&hl=tr" data-toggle="tooltip" title="Google Scholar!"></a> |						
+                        <a class="fa fa-envelope-square fa-lg" href="mailto:ahmet.kasif@btu.edu.tr" data-toggle="tooltip" title="Mail me!"></a> |
+                        <a class="fa fa-telegram fa-lg" href="https://t.me/ahmetkasif" data-toggle="tooltip" title="Text me!"></a> |
+                        <a class="fa fa-spotify fa-lg" href="https://sptfy.com/6f9R" data-toggle="tooltip" title="The way"></a> |
+                        <a class="fa fa-linkedin fa-lg" href="https://www.linkedin.com/in/ahmetkasif/" data-toggle="tooltip" title="That's for colleagues!"></a>
+                        <hr/>
+
+                        <h4 class="card-title" id="publications">Journal Articles</h4>
+                        <ul class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">A firewall policy anomaly detection framework for reliable network security</div>
+                                    IEEE Transactions on Reliability
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2021</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Energy load forecasting using a dual-stage attention-based recurrent neural network</div>
+                                    MDPI Sensors
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2021</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Analysis of cyber security knowledge gaps based on cyber security body of knowledge</div>
+                                    Education and Information Technologies
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2023</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Temporal fusion transformer-based prediction in aquaponics</div>
+                                    The Journal of Supercomputing
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2023</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Deep learning-based modelling of pyrolysis</div>
+                                    Cluster Computing
+                                </div>
+                                <span class="badge bg-primary rounded-pill">2023</span>
+                            </li>
+                        </ul>
+                        <hr/>
+
+                        <h4 class="card-title">Conference Papers</h4>
+                        <ul class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Securing internet of things networks with gateways and multi-SSID technology</div>
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/9593270">Download</a>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">BalkanCom 2021</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Performing similarity analysis on organic farming crop data of Turkish Cities</div>
+                                    <a href="https://ieeexplore.ieee.org/document/9259831">Download</a>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">ASYU 2020</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Classification of Turkish Universities by quantity and titles of Academic Staff</div>
+                                    <a href="https://ieeexplore.ieee.org/document/8567279">Download</a>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">ISMSIT 2018</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Dakik: Pomodoro Based Cross-Platform Time & Task Management App</div>
+                                    <a href="http://umas.duzce.edu.tr/yuklemeler/ABSTRACT%20BOOK%20FINAL.pdf">Download</a>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">UMAS 2017</span>
+                            </li>
+                        </ul>
+                        <hr/>
+
+                        <h4 class="card-title" id="presentations">Presentations</h4>
+                        <ul class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Regression Technique in Machine Learning</div>
+                                    Presentation which I have presented for Machine Learning (Graduate) lecture, Bursa, 2018
+                                </div>
+                                <span class="badge rounded-pill"><a href="#presentations">Download</a></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Optical Character Recognition application for handwritten digits using OpenCV, SVM and C++</div>
+                                    OCR application which I developed and presented in class for Image Processing (Graduate) lecture, Bursa, 2017
+                                </div>
+                                <span class="badge rounded-pill"><a href="#presentations">Download</a></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">A Genetic Algorithm implementation for Knapsack Problem in Java</div>
+                                    Genetic algorithm application which I developed and presented in class for Heuristic Algorithms (Graduate) lecture, Bursa, 2017
+                                </div>
+                                <span class="badge rounded-pill"><a href="#presentations">Download</a></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Probabilistic Information Retrieval</div>
+                                    Presentation which have been prepared and presented with a group of my class mates for Information Retrieval (Graduate) lecture, Bursa, 2017                                </div>
+                                <span class="badge rounded-pill"><a href="#presentations">Download</a></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Dakik: Time Management App</div>
+                                    Presented the accepted abstract in UMAS conference, Düzce, 2017
+                                </div>
+                                <span class="badge rounded-pill"><a href="#presentations">Download</a></span>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <h4 class="card-title" id="projects">Projects</h4>
+                        <ul class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Yapay Zekâ Destekli Biyokütle Piroliz Isıl Davranış Tahmin Arayüz Model Yazılımı Prototipinin Geliştirilmesi</div>
+                                    TÜBİTAK 1002
+                                </div>
+                                <span class="badge rounded-pill">2023-2024</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Ev Otomasyon Sistemleri İçin Yönetilebilir Güvenli Ağ Geçidi</div>
+                                    TÜBİTAK 2543 Türkiye-Polonya İkili İşbirliği
+                                </div>
+                                <span class="badge rounded-pill">2018-2021</span>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
 			</div>
 		</div>
 	</div>
