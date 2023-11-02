@@ -149,7 +149,15 @@
                         <hr/>
 
                         <h4 class="card-title" id="presentations">Presentations</h4>
-                        <ul class="list-group list-group-numbered">
+                            <ul class="list-group list-group-numbered">
+                            <!-- Info-Sec -->
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Information Security- Security Awareness Training</div>
+                                    Presented as part of the yearly information security seminars, Bursa Technical University, Bursa, 2019
+                                </div>
+                                <span class="badge rounded-pill" data-bs-toggle="modal" data-bs-target="#is-modal"><a href="#presentations">Review</a></span>
+                            </li>
                             <!-- Packet Filter -->
                             <li class="list-group-item d-flex justify-content-between align-items-start">
                                 <div class="ms-2 me-auto">
@@ -260,6 +268,26 @@
                 </div>
 			</div>
 		</div>
+		<!-- Information Security Modal -->
+        <div class="modal fade" id="is-modal" tabindex="-1" aria-labelledby="is-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="is-modal-label">Information Security- Security Awareness Training</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <object data="assets/pdf/info-sec.pdf" type="application/pdf" width="100%" height="540px">
+                        <p>Unable to display PDF file. <a href="assets/pdf/info-sec.pdf">Download</a> instead.</p>
+                    </object>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
         <!-- Packet Filter Modal -->
         <div class="modal fade" id="pf-modal" tabindex="-1" aria-labelledby="pf-modal-label" aria-hidden="true">
             <div class="modal-dialog modal-xl">
