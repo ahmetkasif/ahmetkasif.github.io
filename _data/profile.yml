@@ -3,6 +3,8 @@
 # ─────────────────────────────────────────────────────────────
 
 name: "Ahmet Kaşif"
+# Kurum adı: yalnızca arama motorları için yapılandırılmış veride (schema.org) kullanılır, sayfada görünmez.
+organization: "Bursa Technical University"
 title: "Assistant Professor"
 title_tr: "Dr. Öğr. Üyesi"
 affiliation: "Department of Computer Engineering, Bursa Technical University"
@@ -63,6 +65,7 @@ hobbies:
 
 contact:
   phone_work: "0224 300 3758"
+  phone_work_href: "+902243003758"   # tıklanabilir arama bağlantısı (uluslararası biçim); yoksa telefon düz metin görünür
   address: "Bursa Technical University, Mimar Sinan Campus, RN: G-409"
   address_tr: "Bursa Teknik Üniversitesi, Mimar Sinan Yerleşkesi, Oda: G-409"
   # E-postalar sayfada doğrudan yazılmaz; tarayıcıda JavaScript ile birleştirilir (spam botlarına karşı).

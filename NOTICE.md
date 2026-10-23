@@ -9,13 +9,14 @@ The following files are the website's source code and are released under the MIT
 - `_layouts/`, `_includes/`, `index.html`, `tr/index.html`, `404.html`, `robots.txt`
 - `assets/css/main.css`, `assets/js/main.js`
 - `tools/`, `.github/`, `_config.yml`, `Gemfile`
+- `README.md` and `_data/i18n.yml` (documentation and the generic interface strings the templates need)
 
 ## Everything else: All rights reserved
 
 All other material is © Ahmet Kaşif and **all rights are reserved**. It may not be copied, reproduced,
 distributed or reused without prior written permission. This includes:
 
-- the text and data in `_data/` (biography, publication, presentation, project and service lists),
+- the text and data in `_data/` (biography, publication, presentation, project and service lists), except `_data/i18n.yml`,
 - all images in `assets/img/` (portraits, background images, logos and icons),
 - the slides and other documents in `assets/pdf/`.
 

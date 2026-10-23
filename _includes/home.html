@@ -96,8 +96,7 @@
         <dd>
           <address class="contact">
             {% if profile.contact.phone_work %}
-            {% assign tel = profile.contact.phone_work | remove: " " | remove_first: "0" %}
-            <span>{{ ui.phone_work }}: <a href="tel:+90{{ tel }}">{{ profile.contact.phone_work | escape }}</a></span>
+            <span>{{ ui.phone_work }}: {% if profile.contact.phone_work_href %}<a href="tel:{{ profile.contact.phone_work_href | remove: " " | escape }}">{{ profile.contact.phone_work | escape }}</a>{% else %}{{ profile.contact.phone_work | escape }}{% endif %}</span>
             {% endif %}
             {% if profile.contact.address %}<span>{{ profile.contact[k_addr] | default: profile.contact.address | escape }}</span>{% endif %}
             {% for email in profile.contact.emails %}

@@ -58,7 +58,7 @@
     "@type": "Person",
     "name": {{ profile.name | jsonify }},
     "jobTitle": {{ job_title | jsonify }},
-    "affiliation": { "@type": "CollegeOrUniversity", "name": "Bursa Technical University" },
+    {% if profile.organization %}"affiliation": { "@type": "Organization", "name": {{ profile.organization | jsonify }} },{% endif %}
     "url": {{ '/' | absolute_url | jsonify }}
   }
   </script>
