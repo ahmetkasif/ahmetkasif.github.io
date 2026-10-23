@@ -1,0 +1,104 @@
+# ─────────────────────────────────────────────────────────────
+# Yayınlar. EN YENİ EN ÜSTTE olacak şekilde sırala (sayfa dosyadaki sırayı korur).
+#
+# Yeni makale eklemek için aşağıdaki bloklardan birini kopyala, en üste yapıştır, doldur.
+#
+#   type:   journal | conference           (zorunlu)
+#   title:  makale başlığı (orijinal dilinde, çevrilmez)   (zorunlu)
+#   venue:  dergi veya konferans adı       (zorunlu)
+#   year:   yıl                            (zorunlu)
+#   status: isteğe bağlı rozet, örn. "In press"; Türkçesi için status_tr: "Baskıda"
+#   doi:    yalnızca DOI, örn. "10.1109/TR.2021.1234567"  (isteğe bağlı; "DOI" düğmesi çıkar,
+#           https://doi.org/ yazma, o otomatik eklenir)
+#   url:    DOI olmayan yayıncı sayfası bağlantısı   (isteğe bağlı)
+#   pdf:    assets/pdf/ altındaki dosya adı          (isteğe bağlı)
+#   code:   kod deposu bağlantısı                    (isteğe bağlı)
+# ─────────────────────────────────────────────────────────────
+
+# Aquacultural Engineering: şu an çevrimiçi yayında, basılı sayı 2027 olacağı için yıl 2027 gösteriliyor.
+- type: journal
+  title: "A model-based Reference Architecture for smart aquaponics systems"
+  venue: "Aquacultural Engineering"
+  year: 2027
+  doi: "10.1016/j.aquaeng.2026.102830"
+
+- type: journal
+  title: "Classical Turkish Music Composition with LSTM Self-Attention"
+  venue: "Journal of Innovative Science and Engineering"
+  year: 2024
+  doi: "10.38088/jise.1406162"
+
+- type: journal
+  title: "Hierarchical multi-head attention LSTM for polyphonic symbolic melody generation"
+  venue: "Multimedia Tools and Applications"
+  year: 2024
+  doi: "10.1007/s11042-024-18491-7"
+
+- type: journal
+  title: "Deep learning-based modelling of pyrolysis"
+  venue: "Cluster Computing"
+  year: 2023
+  doi: "10.1007/s10586-023-04096-6"
+
+- type: journal
+  title: "Temporal fusion transformer-based prediction in aquaponics"
+  venue: "The Journal of Supercomputing"
+  year: 2023
+  doi: "10.1007/s11227-023-05389-8"
+
+- type: journal
+  title: "Analysis of cyber security knowledge gaps based on cyber security body of knowledge"
+  venue: "Education and Information Technologies"
+  year: 2023
+  doi: "10.1007/s10639-022-11387-9"
+
+- type: journal
+  title: "Energy Load Forecasting Using a Dual-Stage Attention-Based Recurrent Neural Network"
+  venue: "MDPI Sensors"
+  year: 2021
+  doi: "10.3390/s21217115"
+
+- type: journal
+  title: "A Firewall Policy Anomaly Detection Framework for Reliable Network Security"
+  venue: "IEEE Transactions on Reliability"
+  year: 2021
+  doi: "10.1109/TR.2021.3089511"
+
+# Kabul edildi, IWW 2025'te sunuldu, henüz basılmadı. Yayımlanınca status/status_tr satırlarını sil, doi ekle.
+- type: conference
+  title: "Image Processing for Precision Aquaponics: Applications, Challenges, and Future Directions"
+  venue: "IWW 2025"
+  year: 2025
+  status: "Accepted"
+  status_tr: "Kabul edildi"
+
+- type: conference
+  title: "Federated Learning for Smart and Sustainable Aquaponics: A Decentralized AI Approach for Urban Resilience"
+  venue: "PAKDD 2025"
+  year: 2025
+  doi: "10.1007/978-981-96-8197-6_5"
+
+- type: conference
+  title: "Securing Internet of Things Networks with Gateways and Multi-SSID Technology"
+  venue: "BalkanCom 2021"
+  year: 2021
+  doi: "10.1109/BalkanCom53780.2021.9593270"
+
+- type: conference
+  title: "Performing similarity analysis on organic farming crop data of Turkish Cities"
+  venue: "ASYU 2020"
+  year: 2020
+  doi: "10.1109/ASYU50717.2020.9259831"
+
+- type: conference
+  title: "Classification of Turkish Universities by quantity and titles of Academic Staff"
+  venue: "ISMSIT 2018"
+  year: 2018
+  doi: "10.1109/ISMSIT.2018.8567279"
+
+# DOI yok; özet kitabı bağlantısı url olarak duruyor.
+- type: conference
+  title: "Dakik: Pomodoro Based Cross-Platform Time & Task Management App"
+  venue: "UMAS 2017"
+  year: 2017
+  url: "http://umas.duzce.edu.tr/yuklemeler/ABSTRACT%20BOOK%20FINAL.pdf"

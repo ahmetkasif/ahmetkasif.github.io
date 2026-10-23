@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────
+# Hakemlik ve jüri görevleri.
+#
+# profiles: "Peer review" başlığının sağındaki profil kutuları (label, url)
+# reviews:  hakemlik yapılan dergiler (journal; isteğe bağlı url = derginin sayfası)
+# jury:     event / kind / role / year (hepsi zorunlu); Türkçeleri için event_tr, kind_tr, role_tr
+# ─────────────────────────────────────────────────────────────
+
+profiles:
+  - label: "Web of Science"
+    url: "https://www.webofscience.com/wos/author/record/2337861"
+  - label: "DergiPark"
+    url: "https://dergipark.org.tr/tr/pub/@ahmetkasif"
+
+reviews:
+  - journal: "IEEE Transactions on Neural Networks and Learning Systems"
+    url: "https://cis.ieee.org/publications/t-neural-networks-and-learning-systems/ieee-transactions-on-neural-networks-and-learning-systems"
+  - journal: "Electrica"
+    url: "https://electricajournal.org/index.php/pub"
+  - journal: "IEEE Transactions on Cybernetics"
+    url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036"
+  - journal: "Sakarya University Journal of Science"
+    url: "https://dergipark.org.tr/tr/pub/saufenbilder"
+  - journal: "Journal of Innovative Science and Engineering"
+    url: "http://jise.btu.edu.tr/tr/"
+
+jury:
+  - event: "TEKNOFEST Educational Technologies Competition"
+    event_tr: "TEKNOFEST Eğitim Teknolojileri Yarışması"
+    kind: "Contest"
+    kind_tr: "Yarışma"
+    role: "Jury"
+    role_tr: "Jüri"
+    year: 2023
+  - event: "NASA Space Apps Bursa"
+    kind: "Hackathon"
+    role: "Jury & Mentor"
+    role_tr: "Jüri ve mentor"
+    year: 2023

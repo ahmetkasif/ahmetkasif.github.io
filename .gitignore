@@ -1,4 +1,5 @@
-/bootstrap/compiled.php
-.env.*.php
-.env.php
-.env
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock

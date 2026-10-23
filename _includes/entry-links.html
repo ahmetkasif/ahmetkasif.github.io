@@ -1,0 +1,8 @@
+{% if item.doi or item.url or item.pdf or item.code %}
+<p class="entry-links">
+  {% if item.doi and item.doi != "" %}<a class="entry-link" href="https://doi.org/{{ item.doi | uri_escape | escape }}" target="_blank" rel="noopener" title="doi:{{ item.doi | escape }}"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>DOI</a>{% endif %}
+  {% if item.url and item.url != "" %}<a class="entry-link" href="{{ item.url }}" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>{{ url_label }}</a>{% endif %}
+  {% if item.pdf and item.pdf != "" %}<a class="entry-link" href="{{ '/assets/pdf/' | append: item.pdf | relative_url }}" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>{{ pdf_label }}</a>{% endif %}
+  {% if item.code and item.code != "" %}<a class="entry-link" href="{{ item.code }}" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i>{{ ui.code }}</a>{% endif %}
+</p>
+{% endif %}

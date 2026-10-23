@@ -1,0 +1,14 @@
+---
+layout: default
+title: Page not found / Sayfa bulunamadı
+permalink: /404.html
+lang: en
+---
+<div class="container site-container">
+  <section class="panel">
+    <h1 class="section-title">{{ site.data.i18n.en.not_found_title }} / {{ site.data.i18n.tr.not_found_title }}</h1>
+    <p>{{ site.data.i18n.en.not_found_text }}</p>
+    <p lang="tr">{{ site.data.i18n.tr.not_found_text }}</p>
+    <p><a href="{{ '/' | relative_url }}">{{ site.data.i18n.en.back_home }}</a> &middot; <a href="{{ '/tr/' | relative_url }}" lang="tr">{{ site.data.i18n.tr.back_home }}</a></p>
+  </section>
+</div>

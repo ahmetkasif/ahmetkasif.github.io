@@ -1,0 +1,30 @@
+{%- comment -%} Ana sayfada bölüm bağlantıları "#about" biçiminde, diğer sayfalarda (404) ana sayfaya giden tam bağlantıdır. {%- endcomment -%}
+{% if page.i18n %}{% assign nav_base = "" %}{% else %}{% assign nav_base = "/" | relative_url %}{% endif %}
+<header class="site-header sticky-top">
+  <nav class="navbar navbar-expand-md" id="site-nav" aria-label="{{ ui.nav_label | escape }}">
+    <div class="container site-container">
+      <a class="navbar-brand" href="{{ nav_base }}#top">{{ site.data.profile.name | escape }}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="{{ ui.nav_toggle | escape }}">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="{{ nav_base }}#about">{{ ui.nav_about }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ nav_base }}#publications">{{ ui.nav_publications }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ nav_base }}#presentations">{{ ui.nav_presentations }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ nav_base }}#projects">{{ ui.nav_projects }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ nav_base }}#service">{{ ui.nav_service }}</a></li>
+        </ul>
+        <div class="nav-tools">
+          <div class="lang-switch" role="group" aria-label="{{ ui.lang_label | escape }}">
+            <a href="{{ '/' | relative_url }}" hreflang="en" lang="en"{% if lang == "en" %} aria-current="true"{% endif %}>EN</a>
+            <a href="{{ '/tr/' | relative_url }}" hreflang="tr" lang="tr"{% if lang == "tr" %} aria-current="true"{% endif %}>TR</a>
+          </div>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="{{ ui.theme_toggle | escape }}" title="{{ ui.theme_toggle | escape }}">
+            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

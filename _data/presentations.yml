@@ -1,0 +1,67 @@
+# ─────────────────────────────────────────────────────────────
+# Sunumlar. EN YENİ EN ÜSTTE.
+#
+#   title:       sunum başlığı                       (zorunlu)
+#   description: nerede / ne kapsamda sunuldu        (zorunlu); Türkçesi için description_tr
+#   year:        yıl                                 (zorunlu)
+#   pdf:         assets/pdf/ altındaki dosya adı     (isteğe bağlı; varsa "Slides" düğmesi çıkar)
+#   url:         harici bağlantı                     (isteğe bağlı)
+# ─────────────────────────────────────────────────────────────
+
+- title: "OWASP: Client-Server Architecture"
+  description: "Presented as part of the seminars in the OWASP community, OWASP-BTU Chapter, Bursa"
+  description_tr: "OWASP topluluğu seminerleri kapsamında sunuldu, OWASP-BTU Bölümü, Bursa"
+  year: 2023
+  pdf: "owasp-client-server.pdf"
+
+- title: "Information Security – Security Awareness Training"
+  description: "Presented as part of the yearly information security seminars, Bursa Technical University, Bursa"
+  description_tr: "Yıllık bilgi güvenliği seminerleri kapsamında sunuldu, Bursa Teknik Üniversitesi, Bursa"
+  year: 2019
+  pdf: "info-sec.pdf"
+
+- title: "Artificial Intelligence Approaches In Detecting Packet Filtering Firewall Anomalies"
+  description: "Presented in Graduate Seminar, Uludag University, Bursa"
+  description_tr: "Yüksek lisans seminerinde sunuldu, Uludağ Üniversitesi, Bursa"
+  year: 2019
+  pdf: "packet-filter.pdf"
+
+- title: "Classification of Turkish Universities by quantity and titles of Academic Staff"
+  description: "Presented the conference paper, ISMSIT, Ankara"
+  description_tr: "Bildiri ISMSIT konferansında sunuldu, Ankara"
+  year: 2018
+  pdf: "classification.pdf"
+
+- title: "Regression Technique in Machine Learning"
+  description: "Presented in Graduate lecture, Uludag University, Bursa"
+  description_tr: "Yüksek lisans dersinde sunuldu, Uludağ Üniversitesi, Bursa"
+  year: 2018
+  pdf: "ml-regression.pdf"
+
+- title: "Blockchain and Cyber Security"
+  description: "Presented in Graduate lecture, Uludag University, Bursa"
+  description_tr: "Yüksek lisans dersinde sunuldu, Uludağ Üniversitesi, Bursa"
+  year: 2018
+  pdf: "blockchain.pdf"
+
+- title: "Optical Character Recognition application for handwritten digits using OpenCV, SVM and C++"
+  description: "Presented in Graduate lecture, Uludag University, Bursa"
+  description_tr: "Yüksek lisans dersinde sunuldu, Uludağ Üniversitesi, Bursa"
+  year: 2017
+
+- title: "A Genetic Algorithm Application for Knapsack Problem in Java"
+  description: "Developed for and presented in Graduate course, Uludag University, Bursa"
+  description_tr: "Yüksek lisans dersi için geliştirildi ve derste sunuldu, Uludağ Üniversitesi, Bursa"
+  year: 2017
+  pdf: "genetic-knapsack.pdf"
+
+- title: "Probabilistic Methods in Information Retrieval Systems"
+  description: "Presented with friends in Graduate lecture, Uludag University, Bursa"
+  description_tr: "Arkadaşlarla birlikte yüksek lisans dersinde sunuldu, Uludağ Üniversitesi, Bursa"
+  year: 2017
+  pdf: "probabilistic.pdf"
+
+- title: "Dakik: Time Management App"
+  description: "Presented the abstract in UMAS conference, Düzce"
+  description_tr: "Özet bildiri UMAS konferansında sunuldu, Düzce"
+  year: 2017

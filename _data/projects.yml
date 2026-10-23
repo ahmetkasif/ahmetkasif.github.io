@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────────────────────
+# Projeler. Devam edenler en üstte, sonra en yeniden eskiye.
+#
+#   title:   proje adı (İngilizce sayfada gösterilir)      (zorunlu); Türkçesi için title_tr
+#   url:     proje sayfası                                  (isteğe bağlı)
+#   org:     kurum / destekleyen (İngilizce)               (zorunlu); Türkçesi için org_tr
+#   org_url: kurum bağlantısı                               (isteğe bağlı)
+#   period:  dönem, örn. "2023–2024"                        (zorunlu)
+#
+# NOT: Aşağıdaki İngilizce proje adları TASLAK çeviridir; resmî İngilizce adları varsa değiştir.
+# ─────────────────────────────────────────────────────────────
+
+- title: "EXEREYES: AI-Powered Mobile Fitness Coach"
+  url: "https://www.lotussport.net/exereyes"
+  org: "Lotus Sport"
+  org_url: "https://www.lotussport.net/"
+  period: "2024–2026"
+
+- title: "Development of a Prototype Interface and Model Software for AI-Supported Prediction of Biomass Pyrolysis Thermal Behavior"
+  title_tr: "Yapay Zekâ Destekli Biyokütle Piroliz Isıl Davranış Tahmin Arayüz Model Yazılımı Prototipinin Geliştirilmesi"
+  org: "TÜBİTAK 1002"
+  period: "2023–2024"
+
+- title: "Manageable Secure Gateway for Home Automation Systems"
+  title_tr: "Ev Otomasyon Sistemleri İçin Yönetilebilir Güvenli Ağ Geçidi"
+  org: "TÜBİTAK 2543 Turkey–Poland Bilateral Cooperation"
+  org_tr: "TÜBİTAK 2543 Türkiye-Polonya İkili İşbirliği"
+  period: "2018–2021"

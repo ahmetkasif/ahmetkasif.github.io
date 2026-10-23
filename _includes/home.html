@@ -1,0 +1,238 @@
+{%- comment -%}
+  Ana sayfa gövdesi. index.html (İngilizce) ve tr/index.html (Türkçe) bunu ortak kullanır.
+  Dil: page.lang. İngilizce alan adı = "title", Türkçesi = "title_tr" (yoksa İngilizcesi gösterilir).
+{%- endcomment -%}
+{% assign lang = page.lang | default: "en" %}
+{% assign ui = site.data.i18n[lang] %}
+{% if lang == "tr" %}{% assign sfx = "_tr" %}{% else %}{% assign sfx = "" %}{% endif %}
+{% assign k_title = "title" | append: sfx %}
+{% assign k_aff = "affiliation" | append: sfx %}
+{% assign k_aff2 = "affiliation_extra" | append: sfx %}
+{% assign k_bio = "bio" | append: sfx %}
+{% assign k_int = "interests" | append: sfx %}
+{% assign k_label = "label" | append: sfx %}
+{% assign k_name = "name" | append: sfx %}
+{% assign k_note = "note" | append: sfx %}
+{% assign k_addr = "address" | append: sfx %}
+{% assign k_desc = "description" | append: sfx %}
+{% assign k_org = "org" | append: sfx %}
+{% assign k_status = "status" | append: sfx %}
+{% assign k_event = "event" | append: sfx %}
+{% assign k_kind = "kind" | append: sfx %}
+{% assign k_role = "role" | append: sfx %}
+
+{% assign profile = site.data.profile %}
+{% assign photo_found = site.static_files | where: "path", profile.photo | size %}
+
+<div class="container site-container">
+
+  <!-- About -->
+  <section id="about" class="panel panel-hero" aria-labelledby="hero-name">
+    <div class="hero{% if photo_found == 0 %} hero--no-photo{% endif %}">
+      {% if photo_found > 0 %}
+      <div class="hero-photo">
+        <img src="{{ profile.photo | relative_url }}" alt="{{ ui.portrait_of | escape }} {{ profile.name | escape }}" width="168" height="168" decoding="async" fetchpriority="high">
+      </div>
+      {% endif %}
+      <div class="hero-text">
+        <h1 id="hero-name">{{ profile.name | escape }}</h1>
+        <p class="hero-title">{{ profile[k_title] | default: profile.title | escape }}</p>
+        <p class="hero-affil">{{ profile[k_aff] | default: profile.affiliation | escape }}</p>
+        {% if profile.affiliation_extra %}<p class="hero-affil">{{ profile[k_aff2] | default: profile.affiliation_extra | escape }}</p>{% endif %}
+        <ul class="icon-links list-unstyled">
+          {% for l in profile.links %}
+          <li>
+            {% if l.email %}
+            {% assign mail = l.email | split: "@" %}
+            <a class="icon-link js-mail" href="#about" data-user="{{ mail[0] }}" data-domain="{{ mail[1] }}" aria-label="{{ l.title | escape }}" title="{{ l.title | escape }}"><i class="bi bi-{{ l.icon }}" aria-hidden="true"></i></a>
+            {% else %}
+            <a class="icon-link" href="{{ l.url }}" target="_blank" rel="noopener" aria-label="{{ l.title | escape }}" title="{{ l.title | escape }}"><i class="bi bi-{{ l.icon }}" aria-hidden="true"></i></a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-bio">
+      {% assign bio_paras = profile[k_bio] | default: profile.bio %}
+      {% for para in bio_paras %}<p>{{ para | escape }}</p>{% endfor %}
+    </div>
+
+    <dl class="facts">
+      <div class="fact">
+        <dt>{{ ui.education }}</dt>
+        <dd>
+          <ul class="inline-list list-unstyled">
+            {% for e in profile.education %}<li><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e[k_label] | default: e.label | escape }}</a></li>{% endfor %}
+          </ul>
+        </dd>
+      </div>
+      <div class="fact">
+        <dt>{{ ui.interests }}</dt>
+        <dd>
+          {% assign interests = profile[k_int] | default: profile.interests %}
+          <ul class="inline-list inline-list-chips list-unstyled">
+            {% for i in interests %}<li><span class="chip">{{ i | escape }}</span></li>{% endfor %}
+          </ul>
+        </dd>
+      </div>
+      <div class="fact">
+        <dt>{{ ui.hobbies }}</dt>
+        <dd>
+          <ul class="inline-list list-unstyled">
+            {% for h in profile.hobbies %}
+            <li>
+              {% assign hname = h[k_name] | default: h.name %}
+              {% assign hnote = h[k_note] | default: h.note %}
+              {% if h.url %}<a href="{{ h.url }}" target="_blank" rel="noopener"{% if h.note %} data-bs-toggle="tooltip" data-bs-placement="top" title="{{ hnote | escape }}"{% endif %}>{{ hname | escape }}</a>{% elsif h.note %}<span tabindex="0" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ hnote | escape }}">{{ hname | escape }}</span>{% else %}{{ hname | escape }}{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </div>
+      <div class="fact">
+        <dt>{{ ui.contact }}</dt>
+        <dd>
+          <address class="contact">
+            {% if profile.contact.phone_work %}
+            {% assign tel = profile.contact.phone_work | remove: " " | remove_first: "0" %}
+            <span>{{ ui.phone_work }}: <a href="tel:+90{{ tel }}">{{ profile.contact.phone_work | escape }}</a></span>
+            {% endif %}
+            {% if profile.contact.address %}<span>{{ profile.contact[k_addr] | default: profile.contact.address | escape }}</span>{% endif %}
+            {% for email in profile.contact.emails %}
+            {% assign mail = email | split: "@" %}
+            <span>{{ ui.email }}: <a class="js-mail js-mail-text" href="#about" data-user="{{ mail[0] }}" data-domain="{{ mail[1] }}">{{ mail[0] }} [at] {{ mail[1] }}</a></span>
+            {% endfor %}
+          </address>
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="panel" aria-labelledby="publications-title">
+    <h2 id="publications-title" class="section-title">{{ ui.publications }}</h2>
+
+    <h3 class="subsection-title">{{ ui.journal_articles }}</h3>
+    {% assign journals = site.data.publications | where: "type", "journal" %}
+    {% assign prev_year = "" %}
+    {% assign url_label = ui.view_paper %}
+    {% assign pdf_label = ui.pdf %}
+    <ul class="entries list-unstyled">
+      {% for item in journals %}
+      {% assign y = item.year | append: "" %}
+      {% assign st = item[k_status] | default: item.status %}
+      <li class="entry">
+        <span class="entry-when{% if y == prev_year %} visually-hidden{% endif %}">{{ y }}</span>
+        <div class="entry-body">
+          <p class="entry-title">{{ item.title | escape }}</p>
+          <p class="entry-meta"><em>{{ item.venue | escape }}</em>{% if st %} <span class="badge text-bg-secondary">{{ st | escape }}</span>{% endif %}</p>
+          {% include entry-links.html %}
+        </div>
+      </li>
+      {% assign prev_year = y %}
+      {% endfor %}
+    </ul>
+
+    <h3 class="subsection-title">{{ ui.conference_papers }}</h3>
+    {% assign conferences = site.data.publications | where: "type", "conference" %}
+    {% assign prev_year = "" %}
+    <ul class="entries list-unstyled">
+      {% for item in conferences %}
+      {% assign y = item.year | append: "" %}
+      {% assign st = item[k_status] | default: item.status %}
+      <li class="entry">
+        <span class="entry-when{% if y == prev_year %} visually-hidden{% endif %}">{{ y }}</span>
+        <div class="entry-body">
+          <p class="entry-title">{{ item.title | escape }}</p>
+          <p class="entry-meta"><em>{{ item.venue | escape }}</em>{% if st %} <span class="badge text-bg-secondary">{{ st | escape }}</span>{% endif %}</p>
+          {% include entry-links.html %}
+        </div>
+      </li>
+      {% assign prev_year = y %}
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Presentations -->
+  <section id="presentations" class="panel" aria-labelledby="presentations-title">
+    <h2 id="presentations-title" class="section-title">{{ ui.presentations }}</h2>
+    {% assign prev_year = "" %}
+    {% assign url_label = ui.link %}
+    {% assign pdf_label = ui.slides %}
+    <ul class="entries list-unstyled">
+      {% for item in site.data.presentations %}
+      {% assign y = item.year | append: "" %}
+      <li class="entry">
+        <span class="entry-when{% if y == prev_year %} visually-hidden{% endif %}">{{ y }}</span>
+        <div class="entry-body">
+          <p class="entry-title">{{ item.title | escape }}</p>
+          <p class="entry-meta">{{ item[k_desc] | default: item.description | escape }}</p>
+          {% include entry-links.html %}
+        </div>
+      </li>
+      {% assign prev_year = y %}
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="panel" aria-labelledby="projects-title">
+    <h2 id="projects-title" class="section-title">{{ ui.projects }}</h2>
+    <ul class="entries entries-wide list-unstyled">
+      {% for item in site.data.projects %}
+      {% assign ptitle = item[k_title] | default: item.title %}
+      {% assign porg = item[k_org] | default: item.org %}
+      <li class="entry">
+        <span class="entry-when">{{ item.period | escape }}</span>
+        <div class="entry-body">
+          <p class="entry-title">{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">{{ ptitle | escape }}</a>{% else %}{{ ptitle | escape }}{% endif %}</p>
+          <p class="entry-meta">{% if item.org_url %}<a href="{{ item.org_url }}" target="_blank" rel="noopener">{{ porg | escape }}</a>{% else %}{{ porg | escape }}{% endif %}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Reviews and jury -->
+  <section id="service" class="panel" aria-labelledby="service-title">
+    <h2 id="service-title" class="section-title">{{ ui.service }}</h2>
+
+    <div class="subsection-row">
+      <h3 class="subsection-title">{{ ui.peer_review }}</h3>
+      <div class="profile-boxes" role="group" aria-label="{{ ui.reviewer_profiles | escape }}">
+        <span class="profile-boxes-label">{{ ui.reviewer_profiles }}</span>
+        {% for pr in site.data.service.profiles %}
+        <a class="profile-box" href="{{ pr.url }}" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>{{ pr.label | escape }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <ul class="entries entries-simple list-unstyled">
+      {% for r in site.data.service.reviews %}
+      <li class="entry">
+        <div class="entry-body">
+          <p class="entry-title">{% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.journal | escape }}</a>{% else %}{{ r.journal | escape }}{% endif %}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h3 class="subsection-title">{{ ui.jury_mentoring }}</h3>
+    {% assign prev_year = "" %}
+    <ul class="entries entries-wide list-unstyled">
+      {% for j in site.data.service.jury %}
+      {% assign y = j.year | append: "" %}
+      <li class="entry">
+        <span class="entry-when{% if y == prev_year %} visually-hidden{% endif %}">{{ y }}</span>
+        <div class="entry-body">
+          <p class="entry-title">{{ j[k_event] | default: j.event | escape }}</p>
+          <p class="entry-meta">{{ j[k_kind] | default: j.kind | escape }}, {{ j[k_role] | default: j.role | escape }}</p>
+        </div>
+      </li>
+      {% assign prev_year = y %}
+      {% endfor %}
+    </ul>
+  </section>
+
+</div>

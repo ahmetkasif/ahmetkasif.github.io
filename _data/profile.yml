@@ -1,0 +1,83 @@
+# ─────────────────────────────────────────────────────────────
+# Kişisel bilgiler. Sayfanın üst kısmı ve iletişim bölümü buradan gelir.
+# ─────────────────────────────────────────────────────────────
+
+name: "Ahmet Kaşif"
+title: "Assistant Professor"
+title_tr: "Dr. Öğr. Üyesi"
+affiliation: "Department of Computer Engineering, Bursa Technical University"
+affiliation_tr: "Bilgisayar Mühendisliği Bölümü, Bursa Teknik Üniversitesi"
+# Birden fazla görev göstermek istersen aşağıdaki satırın başındaki # işaretini kaldır:
+# affiliation_extra: "Postdoctoral Researcher, Qatar University"
+# affiliation_extra_tr: "Doktora Sonrası Araştırmacı, Katar Üniversitesi"
+
+# ÇEVİRİ KURALI: Her metin alanının İngilizcesi normal alandadır (örn. title). Türkçesi aynı adın sonuna
+# "_tr" eklenerek yazılır (title_tr). "_tr" yoksa Türkçe sayfada İngilizcesi gösterilir.
+
+# Profil fotoğrafı: bu dosyayı assets/img/profile.jpg olarak yükle. Kare kırp, 400x400 piksel ve en fazla
+# ~100 KB olsun (sayfa hızını etkilemez). Dosya yoksa fotoğraf alanı hiç gösterilmez.
+photo: "/assets/img/profile.jpg"
+
+# Tanıtım yazısı: her paragraf listede ayrı bir satırdır ("- " ile başlar). Paragraf eklemek/silmek için satır ekle/sil.
+bio:
+  - "Assistant Professor in the Department of Computer Engineering at Bursa Technical University and currently a Postdoctoral Researcher in the Department of Computer Engineering at Qatar University."
+  - "My research focuses on Artificial Intelligence, Machine Learning, and Deep Learning, with particular interests in lightweight AI, time-series analysis, and intelligent systems."
+  - "I enjoy collaborating with interdisciplinary teams, solving real-world industry problems, and mentoring students through research projects that can evolve into high-quality academic publications."
+  - "Feel free to connect if you are working in related areas or would like to explore potential research or industry collaborations."
+bio_tr:
+  - "Bursa Teknik Üniversitesi Bilgisayar Mühendisliği Bölümünde Dr. Öğretim Üyesi olarak görev yapıyorum. Aynı zamanda Katar Üniversitesi Bilgisayar Mühendisliği Bölümünde doktora sonrası araştırmacı olarak çalışmalarımı sürdürüyorum."
+  - "Araştırmalarım Yapay Zekâ, Makine Öğrenmesi ve Derin Öğrenme alanlarına odaklanmakta; özellikle hafif yapay zekâ modelleri, zaman serisi analizi ve akıllı sistemler üzerine çalışmaktayım."
+  - "Disiplinler arası ekiplerle iş birliği yapmaktan, gerçek dünya ve sanayi problemlerine çözüm geliştirmekten ve öğrencileri nitelikli akademik yayınlara dönüşebilecek araştırma projelerinde yönlendirmekten keyif alıyorum."
+  - "Benzer alanlarda çalışıyorsanız veya potansiyel akademik ya da sanayi iş birliklerini değerlendirmek isterseniz iletişime geçebilirsiniz."
+
+# Sayfa başlığı ve arama motoru açıklaması (meta description)
+description: "Ahmet Kaşif, Assistant Professor at Bursa Technical University. Artificial intelligence, deep learning, time-series, Internet of Things and information security."
+description_tr: "Ahmet Kaşif, Bursa Teknik Üniversitesi Dr. Öğr. Üyesi. Yapay zekâ, derin öğrenme, zaman serileri, nesnelerin interneti ve bilgi güvenliği."
+
+education:
+  - { label: "Bachelors", label_tr: "Lisans", url: "http://bilgisayarmuh.cbu.edu.tr/" }
+  - { label: "Graduate", label_tr: "Yüksek lisans", url: "https://uludag.edu.tr/bm/konu/view?id=5664&title=yuksek-lisans-tezleri" }
+  # Not: PhD bağlantısı eski sitede "…/tr/_" ile bitiyordu, eksik olabilir; kontrol et.
+  - { label: "PhD", label_tr: "Doktora", url: "https://bilgisayarmuhendislik.istanbulc.edu.tr/tr/_" }
+  - { label: "PostDoc", label_tr: "Doktora sonrası", url: "https://www.qu.edu.qa/en-us/projects/aquaponics/Pages/research-team.aspx" }
+  - { label: "Faculty member", label_tr: "Öğretim üyesi", url: "https://sayfam.btu.edu.tr/ahmet.kasif" }
+
+interests:
+  - Artificial Intelligence
+  - Deep Learning
+  - Time-Series
+  - Internet of Things
+  - Information Security
+
+interests_tr:
+  - Yapay Zekâ
+  - Derin Öğrenme
+  - Zaman Serileri
+  - Nesnelerin İnterneti
+  - Bilgi Güvenliği
+
+hobbies:
+  - { name: "Cycling", name_tr: "Bisiklet" }
+  - { name: "Guitar", name_tr: "Gitar" }
+  - { name: "Chess", name_tr: "Satranç", url: "https://lichess.org/@/WesternFront", note: "Challenge me on Lichess", note_tr: "Lichess'te meydan oku" }
+
+contact:
+  phone_work: "0224 300 3758"
+  address: "Bursa Technical University, Mimar Sinan Campus, RN: G-409"
+  address_tr: "Bursa Teknik Üniversitesi, Mimar Sinan Yerleşkesi, Oda: G-409"
+  # E-postalar sayfada doğrudan yazılmaz; tarayıcıda JavaScript ile birleştirilir (spam botlarına karşı).
+  emails:
+    - "ahmet.kasif@btu.edu.tr"
+    - "ksfahmet@gmail.com"
+
+# Hero kısmındaki ikon bağlantıları. Sıra = ekrandaki sıra.
+# icon: https://icons.getbootstrap.com adresindeki herhangi bir ikon adı (bi- öneki olmadan).
+# E-posta için "url" yerine "email" yaz.
+links:
+  - { icon: "mortarboard", title: "Google Scholar", url: "https://scholar.google.com.tr/citations?user=GhmdMjgAAAAJ&hl=tr" }
+  - { icon: "envelope",    title: "Email",          email: "ahmet.kasif@btu.edu.tr" }
+  - { icon: "github",      title: "GitHub",         url: "https://github.com/ahmetkasif" }
+  - { icon: "telegram",    title: "Telegram",       url: "https://t.me/ahmetkasif" }
+  - { icon: "linkedin",    title: "LinkedIn",       url: "https://www.linkedin.com/in/ahmetkasif/" }
+  # İstersen ekle (başındaki # işaretini kaldırıp kendi adresini yaz):
+  # - { icon: "person-badge", title: "ORCID", url: "https://orcid.org/XXXX-XXXX-XXXX-XXXX" }

@@ -1,0 +1,19 @@
+# Site ayarları. Bu dosyayı değiştirdikten sonra yerelde önizliyorsan sunucuyu yeniden başlat.
+title: "Ahmet Kaşif"
+url: "https://ahmetkasif.github.io"   # kullanıcı sitesi: baseurl boş kalmalı
+baseurl: ""
+lang: en
+repo_url: "https://github.com/ahmetkasif/ahmetkasif.github.io"   # alt bilgideki lisans bağlantısı için
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap                    # GitHub Pages bu eklentiyi destekler
+
+# Sitede yayınlanmayacak dosyalar
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - NOTICE.md
+  - tools
+  - .github
